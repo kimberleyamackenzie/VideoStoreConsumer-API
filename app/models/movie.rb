@@ -5,7 +5,8 @@ class Movie < ApplicationRecord
   has_many :customers, through: :rentals
 
   def available_inventory
-    self.inventory - Rental.where(movie: self, returned: false).length
+    self.inventory
+    # self.inventory - Rental.where(movie: self, returned: false).length
   end
 
   def image_url
