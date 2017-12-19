@@ -46,4 +46,10 @@ class MoviesController < ApplicationController
       render status: :not_found, json: { errors: { title: ["No movie with title #{params["title"]}"] } }
     end
   end
+
+  private
+
+def movie_params
+  params.permit(:title, :release_date)
+end
 end
