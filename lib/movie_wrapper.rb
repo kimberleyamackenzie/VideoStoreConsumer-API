@@ -4,7 +4,7 @@ class MovieWrapper
 
   BASE_IMG_URL = "https://image.tmdb.org/t/p/"
   DEFAULT_IMG_SIZE = "w185"
-  DEFAULT_IMG_URL = "http://lorempixel.com/185/278/"
+  DEFAULT_IMG_URL = "https://media1.popsugar-assets.com/files/thumbor/GZfL-TlNbcJwZWI13H10p1x45VM/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2016/07/28/836/n/1922283/623c3d55_edit_img_cover_file_28576183_1423177200/i/Saved-Bell-Where-Now.jpg"
 
   def self.search(query)
     url = BASE_URL + "search/movie?api_key=" + KEY + "&query=" + query
