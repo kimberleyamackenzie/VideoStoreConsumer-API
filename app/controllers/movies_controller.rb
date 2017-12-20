@@ -50,6 +50,6 @@ class MoviesController < ApplicationController
   private
 
 def movie_params
-  params.permit(:title, :release_date)
+  params.permit(:title, :release_date, :overview, :image_url)
 end
 end
